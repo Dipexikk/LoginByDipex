@@ -10,16 +10,30 @@
 <main>
     <div class="okenko">
         <h1>Přihlášení</h1>
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-        <label for="pswrd"><b>Password </b></label>
-        <input type="text" placeholder="Enter password" name="pswrd" required>
-        
+        <form action="action_page.php" method="post">
+            <div class="container">
+                 <label for="uname"><b>Přezdívka/Email</b></label>
+                <div class="usernamelol">
+                <input type="text" placeholder="Napište přezdívku/email" name="uname" required>
+                </div>
+                  <label for="psw"><b>Heslo</b></label>
+                <div class="pswrdlol">
+                  <input type="password" placeholder="Napiště heslo" name="psw" required>
+                </div>
+                 <label class="rmbr">
+                    Pamatovat si mě
+                    <input type="checkbox" checked="checked" name="remember">
+                  </label><p></p>
+                 <button type="submit"><b>Přihlásit se</b></button><p></p>
 
+            </div>
+          
+              <span class="psw">Zapomněl/a jste <a href="#">heslo?</a></span>
+            </div>
+          </form>
     </div>
     <div class="username">
         
-
     </div>
     <div class="password">
 
